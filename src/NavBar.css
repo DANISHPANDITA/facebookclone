@@ -1,0 +1,76 @@
+.Navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+.navItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15vw;
+}
+.input .searchInput {
+  background-color: #ebeef0;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  font-weight: 400;
+  color: #050505;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.SearchIcon {
+  position: absolute;
+  padding: 5px;
+  min-width: 40px;
+  color: #777d85;
+}
+
+.fbLogo {
+  font-size: 5vh !important;
+  color: #2851a3;
+  padding: 10px !important;
+}
+.centerItem {
+  color: #71747a;
+  padding: 3px 3vw 3px 3vw !important;
+  margin-right: 5px;
+  font-size: 5vh !important;
+}
+.centerItem--active {
+  color: #1877f2;
+  border-bottom: 2px solid #1877f2;
+}
+.centerItem:hover {
+  cursor: pointer;
+  color: #1877f2;
+  background-color: #dfdccf;
+  transition: 100ms ease-in-out;
+}
+.rightItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1vw;
+}
+.UserName {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 15px;
+  color: #050505;
+  margin-left: 0.3vw;
+}

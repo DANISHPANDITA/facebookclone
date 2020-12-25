@@ -1,0 +1,33 @@
+.sidebar {
+  margin-left: 0.5vw;
+  flex: 0.2;
+  height: 92vh;
+  top: 8vh;
+  position: sticky;
+}
+.sidebarUpper {
+  border-bottom: 1px solid #dfe1e5;
+}
+.sidebarItems {
+  border-radius: 10px;
+  margin-top: 2vh;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarItems:hover {
+  cursor: pointer;
+  background-color: #e4e6e9;
+  transition: 200ms ease-in-out;
+}
+.avatarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.name {
+  margin-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  font-size: 15px;
+}

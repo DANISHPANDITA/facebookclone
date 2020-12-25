@@ -1,0 +1,19 @@
+.SideBarOption {
+  margin-left: 0.5vw;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+.SideBarOption:hover {
+  cursor: pointer;
+  background-color: #e4e6e9;
+  transition: 200ms ease-in-out;
+}
+.OptionName {
+  margin-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  font-size: 15px;
+}
