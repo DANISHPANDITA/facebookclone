@@ -26,13 +26,22 @@ function SideBar() {
         <SideBarOption icon={userFriends} text="Friends" />
         <SideBarOption icon={roundGroups} text="Groups" />
         <SideBarOption icon={storeIcon} text="Marketplace" />
-        <SideBarOption icon={squareplayIcon} text="Marketplace" />
+        <SideBarOption icon={squareplayIcon} text="Videos" />
         <SideBarOption icon={calenderIcon} text="Events" />
         <SideBarOption icon={clockIcon} text="Memories" />
         <SideBarOption icon={bxsBookmark} text="Memories" />
         <SideBarOption icon={arrowDownAlt2} text="More Options" />
       </div>
-      <div className="sidebarFooter"></div>
+      <div className="sidebarFooter">
+        <p>Your Shortcuts</p>
+        <div className="Shortcut">
+          <img
+            src="https://scontent.fixc1-3.fna.fbcdn.net/v/t31.0-8/11157558_10206689335056551_6398789834733631936_o.jpg?_nc_cat=104&ccb=2&_nc_sid=825194&_nc_ohc=dQ3edMaSpEoAX8NZY92&_nc_ht=scontent.fixc1-3.fna&oh=0b681e09f793b8468514d7535edc4b64&oe=600C7224"
+            alt=""
+          />
+          <p>React JS</p>
+        </div>
+      </div>
     </div>
   );
 }

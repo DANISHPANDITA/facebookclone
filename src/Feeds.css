@@ -1,0 +1,131 @@
+.Feeds {
+  flex: 0.58;
+  margin-left: 11vw;
+  margin-right: 5vw;
+}
+.feedsPart {
+  display: flex;
+  flex-direction: column;
+}
+.stories {
+  display: flex;
+  flex-direction: row;
+}
+.moreStories {
+  right: 27.5vw;
+  top: 23vh;
+  position: absolute;
+}
+.moreStories:hover {
+  cursor: pointer;
+  color: #6e6c6c;
+}
+.facebookWrite {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 10px;
+}
+.writePart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgb(173, 171, 171);
+}
+.writePart input {
+  font-weight: 400;
+  font-family: "Segoe UI";
+  font-size: 17px;
+  color: #65676b;
+  background-color: #e4e6e9;
+  width: 100%;
+  padding: 8px;
+  margin-left: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.fileInputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.fileinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  border-radius: 15px;
+}
+.fileinput p {
+  margin-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 15px;
+  color: #606266;
+}
+.fileinput:hover {
+  cursor: pointer;
+  background-color: #d4d4d4;
+}
+.fileInputIcon {
+  color: #e52d4b;
+  height: 44px !important;
+  width: 44px !important;
+}
+.fileInputIconPhoto {
+  color: #41b35d;
+  height: 35px !important;
+  width: 35px !important;
+}
+.fileInputIconActivity {
+  height: 35px !important;
+  width: 35px !important;
+  color: #ebba45;
+}
+.rooms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  background-color: white;
+  padding: 10px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.roomIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #dbe7f2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.roomIcon:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.roomIcon p {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  font-weight: 600;
+  color: #216fdb;
+}
+.moreForRoom:hover {
+  cursor: pointer;
+}
+.post {
+  margin-left: 1vw;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 15px;
+  width: 96%;
+}

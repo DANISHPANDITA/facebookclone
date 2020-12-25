@@ -10,7 +10,7 @@
 }
 .sidebarItems {
   border-radius: 10px;
-  margin-top: 2vh;
+  margin-top: 1vh;
   padding-left: 1vw;
   display: flex;
   flex-direction: column;
@@ -27,6 +27,34 @@
 }
 .name {
   margin-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  font-size: 15px;
+}
+.sidebarFooter p {
+  color: #67696b;
+  margin-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 17px;
+}
+.Shortcut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.5vw;
+}
+.Shortcut:hover {
+  cursor: pointer;
+  background-color: #e4e6e9;
+  transition: 200ms ease-in-out;
+}
+.Shortcut img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.Shortcut p {
   font-family: "Segoe UI";
   font-weight: 500;
   font-size: 15px;

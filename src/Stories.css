@@ -1,0 +1,43 @@
+.story {
+  margin-left: 1vw;
+  height: 26vh;
+  width: 7.5vw;
+}
+.storyAvatar {
+  top: 6.5vh;
+  left: 0.7vw;
+  height: 30px !important;
+  width: 30px !important;
+  border: 3.5px solid #1c55a0;
+  position: absolute;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.story img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 200ms ease-in-out;
+}
+.story p {
+  top: 32vh;
+  position: absolute;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  width: 7vw;
+  overflow: hidden;
+}
+.story--own {
+  margin-top: 2.5vh;
+  height: 26vh;
+  width: 7.5vw;
+}
+.story--own img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}

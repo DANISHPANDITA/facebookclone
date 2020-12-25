@@ -1,0 +1,9 @@
+.SideRight {
+  margin: 0;
+  flex: 0.3;
+  background-color: blue;
+  left: 15vw;
+  height: 92vh;
+  top: 8vh;
+  position: sticky;
+}
