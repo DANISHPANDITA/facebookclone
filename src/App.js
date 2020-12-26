@@ -1,3 +1,5 @@
+import { IconButton } from "@material-ui/core";
+import { EditRounded } from "@material-ui/icons";
 import React from "react";
 import "./App.css";
 import Feeds from "./Feeds";
@@ -14,6 +16,11 @@ function App() {
         <SideBar />
         <Feeds />
         <SideRight />
+      </div>
+      <div className="addMessageBtn">
+        <IconButton className="addmessage">
+          <EditRounded className="addMessage" />
+        </IconButton>
       </div>
     </div>
   );

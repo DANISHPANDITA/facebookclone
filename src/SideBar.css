@@ -10,7 +10,7 @@
 }
 .sidebarItems {
   border-radius: 10px;
-  margin-top: 1vh;
+  margin-top: 4vh;
   padding-left: 1vw;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,8 @@
   align-items: center;
 }
 .name {
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-left: 10px;
   font-family: "Segoe UI";
   font-weight: 500;
@@ -43,6 +45,7 @@
   flex-direction: row;
   align-items: center;
   padding-left: 0.5vw;
+  border-radius: 10px;
 }
 .Shortcut:hover {
   cursor: pointer;

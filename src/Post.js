@@ -14,7 +14,7 @@ function Post({ avatar, name, post, timestamp, postText }) {
         <div className="leftHeader">
           <Avatar className="postAvatar" src={avatar} alt="" />
           <div className="postGiver">
-            <h3 className="name">{name}</h3>
+            <h3 className="nameofMan">{name}</h3>
             <p className="timestamp">{timestamp}.🌐</p>
           </div>
         </div>

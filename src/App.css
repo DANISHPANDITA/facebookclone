@@ -15,3 +15,14 @@
   flex-direction: row;
   background-color: #f0f2f5;
 }
+.addMessageBtn {
+  position: fixed;
+  top: 90vh;
+  right: 3vw;
+}
+.addmessage {
+  background-color: white !important;
+}
+.addMessage {
+  color: black !important;
+}

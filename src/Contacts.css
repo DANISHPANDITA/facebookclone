@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.contact p {
+  margin-left: 15px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 15px;
+  color: #050505;
+}
+.contact:hover {
+  background-color: #e4e6e9;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}

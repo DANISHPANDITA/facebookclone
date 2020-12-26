@@ -1,9 +1,129 @@
 .SideRight {
   margin: 0;
   flex: 0.3;
-  background-color: blue;
   left: 15vw;
   height: 92vh;
   top: 8vh;
   position: sticky;
+  overflow-y: scroll;
+}
+.SideRight::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #e5e8eb;
+}
+
+.SideRight::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.SideRight::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #bcc0c4;
+}
+.SideRightHeader {
+  margin-top: 4vh;
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676b;
+  line-height: 20px;
+  padding: 2px;
+}
+.sideRightTop {
+  border-bottom: 1px solid #65676b;
+}
+.Birthdays {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15px;
+  margin-right: 1vw;
+}
+.Birthdays:hover {
+  cursor: pointer;
+  background-color: #e4e6e9;
+}
+.Birthdays p {
+  margin-left: 2vw;
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 15px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.Birthdays p b {
+  font-weight: 600;
+}
+.birthdayIcon {
+  color: #197ee9;
+  margin-left: 15px;
+  height: 35px !important;
+  width: 35px !important;
+}
+.contactHeader p {
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676b;
+  line-height: 20px;
+  padding: 2px;
+}
+.contactHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactIcons {
+  margin-right: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ContactIcon {
+  height: 25px !important;
+  width: 25px !important;
+  color: #65676b;
+}
+.contactInfos {
+  border-bottom: 1px solid #afb2b6;
+}
+.createVideoGroup p {
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676b;
+  line-height: 20px;
+  padding: 2px;
+}
+.createnewgroup {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin-right: 10px;
+}
+.createnewgroup p {
+  font-family: "Segoe UI";
+  font-weight: 500;
+  font-size: 15px;
+  color: #050505;
+  margin-left: 15px;
+}
+.createnewgroup:hover {
+  background-color: #e4e6e9;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.newVideoIcon {
+  background-color: #e4e6e9 !important;
+  height: 35px !important;
+  width: 35px !important;
 }

@@ -13,7 +13,7 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import "./NavBar.css";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import facebookMessenger from "@iconify-icons/mdi/facebook-messenger";
 function NavBar() {
   return (

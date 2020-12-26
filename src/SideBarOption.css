@@ -4,6 +4,7 @@
   flex-direction: row;
   align-items: center;
   border-radius: 10px;
+  margin-top: 5px;
 }
 .SideBarOption:hover {
   cursor: pointer;
@@ -15,4 +16,6 @@
   font-family: "Segoe UI";
   font-weight: 500;
   font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

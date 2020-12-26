@@ -21,7 +21,8 @@
   flex-direction: column;
   padding: 15px;
 }
-.name {
+.nameofMan {
+  margin-top: 0;
   font-size: 15px;
   font-family: "Segoe UI";
   font-weight: 600;
@@ -57,4 +58,7 @@
 .footerIcon:hover {
   cursor: pointer;
   background-color: #dbd8d8;
+}
+.post p {
+  margin: 0px 0px 0px 10px;
 }
