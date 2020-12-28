@@ -31,7 +31,7 @@
 .timestamp {
   margin-top: 0;
   font-size: 13px;
-  margin-left: 10px;
+  margin-left: 0;
   color: #65676b;
 }
 .postFooter {
@@ -59,6 +59,6 @@
   cursor: pointer;
   background-color: #dbd8d8;
 }
-.post p {
+.text {
   margin: 0px 0px 0px 10px;
 }

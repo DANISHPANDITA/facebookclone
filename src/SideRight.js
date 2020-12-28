@@ -6,10 +6,27 @@ import {
   SearchRounded,
   VideoCallRounded,
 } from "@material-ui/icons";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Contacts from "./Contacts";
+import db from "./firebase";
 import "./SideRight.css";
 function SideRight() {
+  const [contacts, setcontacts] = useState([]);
+
+  useEffect(() => {
+    db.collection("facebook")
+      .doc("112")
+      .collection("contacts")
+      .onSnapshot((snapshot) =>
+        setcontacts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            contact: doc.data(),
+          }))
+        )
+      );
+  }, []);
+
   return (
     <div className="SideRight">
       <div className="sideRightTop">
@@ -40,46 +57,9 @@ function SideRight() {
           </div>
         </div>
         <div className="contactInfos">
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
-          <Contacts
-            image="https://scontent.fixc1-4.fna.fbcdn.net/v/t1.0-9/123140178_1294527260891385_8705693447098395335_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=575d9iAys6kAX_dFjwE&_nc_ht=scontent.fixc1-4.fna&oh=c492f76de7cf70ac8f44fd6253f38e5e&oe=600D6996"
-            name="Ashish Bhat"
-          />
+          {contacts.map(({ contact, id }) => (
+            <Contacts key={id} image={contact.image} name={contact.name} />
+          ))}
         </div>
         <div className="createVideoGroup">
           <p>Group Conversations</p>
